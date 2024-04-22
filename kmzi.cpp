@@ -6,21 +6,21 @@
 #include <map>
 #include <string>
 
-// Структура за избирател
+
 struct Voter {
     std::string id;
     std::string name;
     bool hasVoted;
 };
 
-// Структура за кандидат
+
 struct Candidate {
     std::string id;
     std::string name;
     int votes;
 };
 
-// Функция за регистрация на избирател
+
 void registerVoter(std::map<std::string, Voter>& voters) {
     std::string id, name;
     std::cout << "Enter Voter ID: ";
@@ -37,7 +37,7 @@ void registerVoter(std::map<std::string, Voter>& voters) {
     }
 }
 
-// Функция за добавяне на кандидат
+
 void addCandidate(std::map<std::string, Candidate>& candidates) {
     std::string id, name;
     std::cout << "Enter Candidate ID: ";
@@ -54,7 +54,7 @@ void addCandidate(std::map<std::string, Candidate>& candidates) {
     }
 }
 
-// Функция за гласуване
+// voting
 void castVote(std::map<std::string, Voter>& voters, std::map<std::string, Candidate>& candidates) {
     std::string voterID, candidateID;
     std::cout << "Enter your Voter ID: ";
